@@ -1,0 +1,79 @@
+.fullscreen-container {
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #f4f4f4; /* Background color */
+}
+
+.container {
+  padding: 20px;
+  background-color: #fff; /* White background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1200px; /* Limit the maximum width */
+  width: 100%; /* Take full width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: titleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.metricsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.metric {
+  background-color: #ffa07a; /* Light salmon color */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(30% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.metric h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.metric p {
+  font-size: 18px;
+  color: #666;
+}
+
+.metric:hover {
+  transform: translateY(-5px);
+  background-color: #90ee90; /* Light green color */
+}
+
+@media screen and (max-width: 768px) {
+  .metricsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+}

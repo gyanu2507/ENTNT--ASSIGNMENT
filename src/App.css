@@ -1,0 +1,46 @@
+/* Navigation Bar */
+.navbar {
+  background-color: #673ab7; /* Purple background color */
+  padding: 10px 0; /* Padding for top and bottom */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Navigation List */
+.nav-list {
+  list-style-type: none; /* Remove default list style */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display items in a row */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Navigation Item */
+.nav-item {
+  margin-right: 20px; /* Margin between navigation items */
+}
+
+/* Navigation Link */
+.nav-link {
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size */
+  padding: 10px 20px; /* Padding for link */
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Unvisited Link Color */
+.nav-link:link {
+  color: #fff; /* Text color */
+  background-color: #f44336; /* Red background color */
+}
+
+/* Visited Link Color */
+.nav-link:visited {
+  color: #fff; /* Text color */
+  background-color: #03a9f4; /* Blue background color */
+}
+
+/* Hover Effect on Navigation Link */
+.nav-link:hover {
+  background-color: #ff9800; /* Orange background color on hover */
+}
